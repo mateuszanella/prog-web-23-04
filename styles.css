@@ -136,22 +136,29 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-}
-
-.services-container p {
     text-align: center;
 }
 
 .services-available {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.service {
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
 }
 
 .service-img {
     max-width: 275px;
     border-radius: 20px;
     margin: 0 1rem;
+}
+
+.service h3 {
+    padding-top: 1rem;
 }
 
 /* image responsive */
