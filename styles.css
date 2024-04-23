@@ -201,12 +201,66 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 1rem;
+}
+
+.contact-title::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.2rem;
+    background-color: var(--hover-color);
+    margin: 0.5rem auto;
 }
 
 .form-group {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.form-group {
+    display: grid;
+    width: 100%;
+    padding: 0 5rem;
+}
+
+.form-group input,
+.form-group textarea {
+    border-radius: 5px;
+    color: #000;
+    height: 2rem;
+    margin-bottom: 1rem;
+}
+
+.form-group textarea {
+    height: 6rem;
+}
+
+.form-label {
+    margin-bottom: 0.2rem;
+}
+
+.contact-btn {
+    width: 100px;
+    background-color: var(--hover-color);
+    color: #000;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact-btn:hover {
+    background-color: #fff;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+label {
+    color: var(--hover-color);
+    font-size: 0.9rem;
 }
 
 /* image responsive */
