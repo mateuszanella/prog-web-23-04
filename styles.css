@@ -32,6 +32,16 @@ body {
     font-family: Tahoma;
 }
 
+p {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
 .container {
     max-width: 768px;
     margin: 0 auto;
@@ -48,7 +58,7 @@ body {
     color: var(--main-color);
     text-decoration: none;
     font-weight: 400;
-    margin-right: 1rem;
+    margin-left: 1rem;
 }
 
 .nav-link:hover {
@@ -115,6 +125,15 @@ body {
     padding: 2rem 0;
 }
 
+.sobre-title::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.2rem;
+    background-color: var(--main-color);
+    margin: 0.5rem 0;
+}
+
 .description-text {
     padding: 0.5rem 0;
 }
@@ -130,6 +149,15 @@ body {
     align-items: center;
     justify-content: center;
     gap: 2rem;
+}
+
+.services h1::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.2rem;
+    background-color: var(--main-color);
+    margin: 0.5rem auto;
 }
 
 .services-container {
@@ -163,7 +191,6 @@ body {
     border: 4px solid var(--main-color);
 }
     
-
 .service h3 {
     padding-top: 1rem;
 }
