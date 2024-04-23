@@ -1,6 +1,24 @@
+/* 
+Cores defaults do site para utilização
+
+white: #fff
+blue: #1c5fa8
+yelow: #ffd700
+gray: #f4f4f4
+*/
+
+/*
+para fontes
+
+black: #000
+gray: #212529
+gray: #333
+*/
+
 :root {
-    --main-color: #036ffc;
-    --hover-color: #e8e800;
+    --main-color: #1c5fa8;
+    --hover-color: #ffd700;
+    --gray-color: #f4f4f4;
 }
 
 * {
@@ -12,21 +30,18 @@
 
 body {
     font-family: Tahoma;
-    color: #333;
-    padding: 0rem 10rem;
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 768px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
+
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    padding: 2rem 0rem;
     background-color: #fff;
+    width: 100%;
 }
 
 .nav-link {
@@ -40,12 +55,107 @@ body {
     color: var(--hover-color);
 }
 
-.half-nav {
+.nav-items {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+
+.half-nav img {
+    width: 7rem;
+}
+
+.info {
+    background-color: var(--main-color);
+    align-items: center;
+    color: #fff;
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.flex-between {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.half-nav img {
-    width: 7rem;
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-66 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 2rem 0;
+}
+
+.info-btn {
+    background-color: var(--main-color);
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border: 1px solid #fff;
+    border-radius: 0.5rem;
+}
+
+.info-btn:hover {
+    background-color: var(--hover-color);
+    color: #000;
+    border: 1px solid #000;
+    transition: 0.3s;
+}
+
+.info-btn:active {
+    transform: scale(0.9);
+}
+
+.sobre {
+    background-color: var(--gray-color);
+    padding: 2rem 0;
+}
+
+.sobre-text {
+    padding: 0.5rem 0;
+}
+
+.start {
+    padding: 0 6rem;
+}
+
+
+/* image responsive */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .grid-66 {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar div {
+        margin: 0 auto;
+    }
+
+    .logo {
+        margin: 0 auto;
+    }
+
+    .info div {
+        margin: 0 auto;
+    }
+
+    .start {
+        padding: 0 2rem;
+    }
+}
+
+@media (max-width: 1300px) {
+
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
 }
