@@ -30,6 +30,13 @@ gray: #333
 
 body {
     font-family: Tahoma;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
 }
 
 p {
@@ -114,6 +121,7 @@ h1 {
     color: #000;
     border: 1px solid #000;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 .info-btn:active {
@@ -261,6 +269,41 @@ h1 {
 label {
     color: var(--hover-color);
     font-size: 0.9rem;
+}
+
+footer {
+    background-color: var(--main-color);
+    color: #fff;
+    border-top: 1px solid #fff;
+    padding: 1rem 5rem;
+}
+
+a {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+}
+
+h5 {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.footer-contact p {
+    line-height: 1.2rem;
+    margin-bottom: 0.2rem;
+}
+
+.footer-contact h5 {
+    margin-bottom: 0.5rem;
+}
+
+.socials {
+    display: flex;
+}
+
+.socials a {
+    margin-right: 1rem;
+    color: #fff;
 }
 
 /* image responsive */
